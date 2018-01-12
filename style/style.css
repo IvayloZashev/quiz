@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.answers-row {
+    padding: 50px 0px;
+    overflow: hidden;
+}
+
+.answer {
+    min-height: 30px;
+}
+
+.answer:nth-child(odd){
+    margin-right: 10%;
+    width: 40%;
+    float:left;
+}
+
+.answer:nth-child(even) {
+    width: 40%;
+    float: right;
+}
+
+.answer>button {
+    background-color: red;
+    width: 100%;
+    height: 50px;
+    border-radius: 45px;
+}

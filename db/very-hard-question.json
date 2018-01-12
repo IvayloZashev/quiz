@@ -1,0 +1,26 @@
+[
+    {
+        "questionId": 1,
+        "question": "Which country is not in Еurope continent",
+        "answers": ["Frnce", "Bulgaria", "Egypt", "Gibraltar"],
+        "answer": "Egypt"
+    },
+    {
+        "questionId": 2,
+        "question": "Which country is reckoned to origin of the coffee plant?",
+        "answers": ["Italy", "Ethiopia", "Brazil", "Yemen"],
+        "answer": "Ethiopia"
+    },
+    {
+        "questionId": 3,
+        "question": "Which is the longest riever in Europe?",
+        "answers": ["Volga", "Dnieper", "Danube", "Nile"],
+        "answer": "Volga"
+    },
+    {
+        "questionId": 4,
+        "question": "Where held the winter olympic games in 1924?",
+        "answers": ["Sapporo", "Saint Moritz", "Lillehammer", "Chamonix"],
+        "answer": "Volga"
+    }
+]
