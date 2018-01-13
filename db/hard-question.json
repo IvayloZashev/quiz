@@ -2,19 +2,22 @@
     {
         "questionId": 1,
         "question": "Which country is not in Еurope continent",
-        "answers": ["Frnce", "Bulgaria", "Egypt", "Gibraltar"],
-        "answer": "Egypt"
+        "answers": ["France", "Bulgaria", "Egypt", "Gibraltar"],
+        "answer": "Egypt",
+        "image": "img/hard-1.png"
     },
     {
         "questionId": 2,
-        "question": "Which country is reckoned to origin of the coffee plant?",
-        "answers": ["Italy", "Ethiopia", "Brazil", "Yemen"],
-        "answer": "Ethiopia"
+        "question": "Which is the longest riever in Europe?",
+        "answers": ["Volga", "Dnieper", "Danube", "Nile"],
+        "answer": "Volga",
+        "image": "img/hard-2.jpg"
     },
     {
         "questionId": 3,
-        "question": "Which is the longest riever in Europe?",
-        "answers": ["Volga", "Dnieper", "Danube", "Nile"],
-        "answer": "Volga"
+        "question": "Which is the highest mountain top Europe?",
+        "answers": ["Mont Blanc", "Kazbek", "Elbrus", "Lhotze"],
+        "answer": "Elbrus",
+        "image": "img/hard-3.jpg"
     }
 ]

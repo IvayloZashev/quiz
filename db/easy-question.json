@@ -1,20 +1,23 @@
 [
-{
-    "questionId": 1,
-    "question": "What is the name of household appliance which is used for cleaning clothes?",
-    "answers": ["oven", "washing machine", "fridge", "chopper"],
-    "answer": "washing machine"
-},
-{
-    "questionId": 2,
-    "question": "How many players starts in a line-up in one team in football match",
-    "answers": [11, 7, 22, 5],
-    "answer": 11
-},
-{
-    "questionId": 3,
-    "question": "How many are the geographical sights of the globe?",
-    "answers": [2, 4, 5, 6],
-    "answer": 4
-}
+    {
+        "questionId": 1,
+        "question": "What is the name of household appliance which is used for cleaning clothes?",
+        "answers": ["oven", "washing machine", "fridge", "chopper"],
+        "answer": "washing machine",
+        "image": "img/easy-1.jpg"
+    },
+    {
+        "questionId": 2,
+        "question": "How many players starts in a line-up in one team in football match",
+        "answers": [11, 7, 22, 5],
+        "answer": 11,
+        "image": "img/easy-2.jpg"
+    },
+    {
+        "questionId": 3,
+        "question": "How many are the geographical sights of the globe?",
+        "answers": [2, 4, 5, 6],
+        "answer": 4,
+        "image": "img/easy-3.svg"
+    }
 ]

@@ -2,7 +2,7 @@
 var easyQuestions;
 var hardQuestions;
 var veryHardQuestions;
-var level = 1;
+var zashevLevel = 1;
 (function () {
     $.getJSON("db/easy-question.json", function (easyQuestionsData) {
         $.getJSON("db/hard-question.json", function (hardQuestionsData) {
@@ -35,6 +35,8 @@ function getQuestion(questionsToAsk) {
         .replace(/%questionId%/g, question.questionId)
         .replace(/%question%/g, question.question);
     $("#question-container").append(containerHtml);
+    $(".jumbotron").empty();
+    $(".jumbotron").css('background-image', 'url(' + question.image + ')');
 }
 
 function checkAnswer(button) {
@@ -44,36 +46,56 @@ function checkAnswer(button) {
     buttons.forEach(function (button) {
         button.disabled = true;
     });
-    if (level === 1) {
-        evaluateAnswer(easyQuestions, answer, level, questionId);
-    } else if (level === 2) {
-        evaluateAnswer(hardQuestions, answer, level, questionId);
+    if (zashevLevel === 1) {
+        evaluateAnswer(easyQuestions, answer, zashevLevel, questionId);
+    } else if (zashevLevel === 2) {
+        evaluateAnswer(hardQuestions, answer, zashevLevel, questionId);
     } else {
-        evaluateAnswer(veryHardQuestions, answer, level, questionId);
+        evaluateAnswer(veryHardQuestions, answer, zashevLevel, questionId);
     }
 }
 
-function evaluateAnswer(questions, answer, level, questionId) {
+function evaluateAnswer(questions, answer, zashevLevelParam, questionId) {
     var question;
     question = questions.filter(function (element) {
         return element.questionId == questionId;
     });
     if (question[0].answer == answer) {
-        $("#result").append("Write");
-        questions.pop(question);
-        if (questions.length > 0) {
-            getQuestion(questions);
-        } else {
-            if (level == 1) {
-                level = 2;
+        $("#result").css('background-image', 'url('+"/img/right.jpg"+')');
+        questions = questions.filter(function (element) {
+            return element.questionId != questionId;
+        });
+
+        if (zashevLevelParam == 1) {
+            easyQuestions = questions;
+            if (easyQuestions.length > 0) {
+                getQuestion(easyQuestions);
+            } else {
+                zashevLevel = 2;
                 getQuestion(hardQuestions);
-            } else if (level == 2) {
-                level = 3;
+            }
+        } else if (zashevLevelParam == 2) {
+            hardQuestions = questions;
+            if (hardQuestions.length > 0) {
+                getQuestion(hardQuestions);
+            } else {
+                zashevLevel = 3;
                 getQuestion(veryHardQuestions);
             }
+        } else {
+            veryHardQuestions = questions;
+            if (veryHardQuestions.length > 0) {
+                getQuestion(veryHardQuestions);
+            } else {
+                $("#result").empty();
+                $("#result").css('background-image', 'url('+"/img/win.jpg"+')');
+                removeAllData();
+            }
         }
+
+
     } else {
-        $("#result").append("Wrong");
+        $("#result").css('background-image', 'url('+"/img/wrong.jpg"+')');
         removeAllData();
     }
 }

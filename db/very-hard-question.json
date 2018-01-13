@@ -1,26 +1,23 @@
 [
     {
         "questionId": 1,
-        "question": "Which country is not in Еurope continent",
-        "answers": ["Frnce", "Bulgaria", "Egypt", "Gibraltar"],
-        "answer": "Egypt"
+        "question": "When was did Chiprovtsi Uprising",
+        "answers": ["1688", "1875", "1903", "1865"],
+        "answer": "1688",
+        "image": "img/very-hard-1.jpg"
     },
     {
         "questionId": 2,
-        "question": "Which country is reckoned to origin of the coffee plant?",
-        "answers": ["Italy", "Ethiopia", "Brazil", "Yemen"],
-        "answer": "Ethiopia"
+        "question": "When was held the battle in Klyuch?",
+        "answers": ["1113", "1014", "997", "897"],
+        "answer": "1014",
+        "image": "img/very-hard-2.jpg"
     },
     {
         "questionId": 3,
-        "question": "Which is the longest riever in Europe?",
-        "answers": ["Volga", "Dnieper", "Danube", "Nile"],
-        "answer": "Volga"
-    },
-    {
-        "questionId": 4,
         "question": "Where held the winter olympic games in 1924?",
         "answers": ["Sapporo", "Saint Moritz", "Lillehammer", "Chamonix"],
-        "answer": "Volga"
+        "answer": "Chamonix",
+        "image": "img/very-hard-3.jpg"
     }
 ]
