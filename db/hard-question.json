@@ -17,7 +17,7 @@
         "questionId": 3,
         "question": "Which is the highest mountain top Europe?",
         "answers": ["Mont Blanc", "Kazbek", "Elbrus", "Lhotze"],
-        "answer": "Elbrus",
+        "answer": "Kazbek",
         "image": "img/hard-3.jpg"
     }
 ]
